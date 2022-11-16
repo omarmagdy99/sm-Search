@@ -17,9 +17,9 @@
 
     <!-- start header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="pic/R.png" alt="" srcset="" class="barndLogo"></a>
+                <a class="navbar-brand" href="#">SM Search</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -60,6 +60,28 @@
                                 </li>
                                 <li><a class="dropdown-item" href="https://www.lcwaikiki.eg/ar-EG/EG" target="_blank">LC
                                         Website</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Raya Tools
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="https://outlook.office.com"
+                                        target="_blank">Outlook</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://wfm.rayacontactcenter.com/TeleoptiWFM/Web/MyTime#TeamSchedule/NewIndex"
+                                        target="_blank">LC
+                                        Teleopti WFM MyTime</a></li>
+                                <li><a class="dropdown-item" href="http://lcwaikiki-kb/?q=content/lcw-eg-stores-wh"
+                                        target="_blank">LC
+                                        K Base</a></li>
+                                <li><a class="dropdown-item" href="http://lcwaikiki-kb/?q=content/lcw-eg-stores-wh"
+                                        target="_blank">LC
+                                        RTM Tool</a></li>
 
                             </ul>
                         </li>
@@ -138,11 +160,31 @@
 
                             </ul>
                         </li>
+                        <li class="nav-item dropdown mx-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                SM Excel sheets
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item"
+                                        href="https://lcwonline-my.sharepoint.com/:x:/g/personal/ahmed_osama_lcwaikiki_com/EaXkOX15scVForLlMP_iaZEBIleURgnt28FSDwNx4xDJwA?rtime=R0bFkICu2kg"
+                                        target="_blank">Osama</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://rayacontactcenterrcc-my.sharepoint.com/:x:/g/personal/omar_mabdelmenaem_rayacx_com/EXlNuDFo33hLqky8F09alF0Bh6B_O2Ip0vfGKXGz66Lccw?e=4%3AsVktMK&at=9&CID=f2ac560f-eaf7-0fe3-712b-db42f637dfea"
+                                        target="_blank">
+                                        Sniffer issue</a></li>
+
+
+                            </ul>
+                        </li>
 
                     </ul>
-                <a class="navbar-brand" href="sm.html">SM Search</a>
-
-
+                    <form class="d-flex" action="#" onsubmit="cID2()">
+                        <input class="form-control me-2" type="number" placeholder="Search ID" aria-label="Search"
+                            id="cCid2" required>
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
         </nav>
@@ -150,12 +192,48 @@
     <!-- end header -->
     <main>
         <!-- password div -->
+        <!-- <div id="smPassword">
+            <form class=" justify-content-center text-center" action="#" onsubmit="smPassword()">
+
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label text-white">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-primary my-3">Submit</button>
+                <div id="smPError">
+
+                    
+                </div>
+            </form>
+        </div>  -->
+        <!-- password div -->
 
 
 
-        <div class="agentHeader">
-            <div class="agentBGround"></div>
+        <!-- https://sniffer.global-bilgi.com.tr/379/Welcome/ChangeLanguage?language=tr-TR       -->
+        <div class="smHeader">
+
+            <div class="smBGround"></div>
+
+            <form action="#" onsubmit="cID()" class="divSearch text-center">
+                <input type="number" class="form-control" id="cCid" required placeholder="Search ID">
+                <button type="submit" class="btn bg-white my-5">search</button>
+            </form>
         </div>
+        <!-- comment or message search -->
+        <!-- user  search -->
+        <div class="smBody pt-5 text-center  bg-white py-5">
+            <div class=" container  smUserSearch py-5">
+                <h3>USER</h3>
+                <p>also, you can search with the user id by the below text box </p>
+                <form action="#" onsubmit="sID()" class="mt-5 px-5">
+
+                    <input type="number" class="form-control" id="sSid" required placeholder="Search ID">
+                    <button type="submit" class="btn btn-primary my-5">search</button>
+                </form>
+            </div>
+        </div>
+        <!-- user  search -->
 
     </main>
     <footer></footer>

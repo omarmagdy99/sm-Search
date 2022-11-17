@@ -19,7 +19,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">SM Search</a>
+                <a class="navbar-brand" href="/">All Agent</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
 
-                        <li class="nav-item dropdown mx-3">
+                        <li class="nav-item dropdown mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Cargo
@@ -46,10 +46,12 @@
                                 </li>
                                 <li><a class="dropdown-item" href="https://mylerz.net/track" target="_blank">Mylerz
                                         User</a></li>
+
+
                             </ul>
                         </li>
 
-                        <li class="nav-item dropdown mx-3">
+                        <li class="nav-item dropdown mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 LC Tools
@@ -63,7 +65,7 @@
 
                             </ul>
                         </li>
-                        <li class="nav-item dropdown mx-3">
+                        <li class="nav-item dropdown mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Raya Tools
@@ -85,7 +87,7 @@
 
                             </ul>
                         </li>
-                        <li class="nav-item dropdown mx-3">
+                        <li class="nav-item dropdown mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Old Tools
@@ -109,7 +111,7 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item dropdown mx-3">
+                        <li class="nav-item dropdown mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 CRM
@@ -117,7 +119,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item"
                                         href="https://crm365.lcwaikiki.com/main.aspx?appid=c99c9d87-e483-eb11-9f29-00155dd42e06&forceUCI=1&newWindow=true&pagetype=entityrecord&etn=incident"
-                                        target="_blank">New User</a>
+                                        target="_blank">New Case</a>
                                 </li>
                                 <li><a class="dropdown-item"
                                         href="https://crm365.lcwaikiki.com/main.aspx?appid=c99c9d87-e483-eb11-9f29-00155dd42e06&forceUCI=1&newWindow=true&pagetype=entitylist&etn=incident&viewid=00000000-0000-0000-00aa-000010001030&viewType=1039"
@@ -127,7 +129,7 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item dropdown mx-3">
+                        <li class="nav-item dropdown mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Excel sheets
@@ -160,7 +162,7 @@
 
                             </ul>
                         </li>
-                        <li class="nav-item dropdown mx-3">
+                        <li class="nav-item dropdown mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 SM Excel sheets
@@ -178,13 +180,36 @@
 
                             </ul>
                         </li>
+                        <li class="nav-item dropdown mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Sniffer Filter
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item"
+                                        href="https://sniffer.global-bilgi.com.tr/379/Monitoring#/&nq=sourcename:FACEBOOK+feedtype:Comment&sortby=createtime:desc&includeretweets=false&includecheckin=true"
+                                        target="_blank">Facebook comment</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://sniffer.global-bilgi.com.tr/379/Monitoring#/&nq=sourcename:FACEBOOK+feedtype:DirectMessage&sortby=createtime:desc&includeretweets=false&includecheckin=true"
+                                        target="_blank">
+                                        Facebook DM</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item"
+                                        href="https://sniffer.global-bilgi.com.tr/379/Monitoring#/&nq=sourcename:INSTAGRAM+feedtype:Comment&sortby=createtime:desc&includeretweets=false&includecheckin=true"
+                                        target="_blank">Instagram comment</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://sniffer.global-bilgi.com.tr/379/Monitoring#/&nq=feedtype:DirectMessage+sourcename:INSTAGRAM&sortby=createtime:desc&includeretweets=false&includecheckin=true"
+                                        target="_blank">
+                                        Instagram DM</a></li>
+
+
+                            </ul>
+                        </li>
 
                     </ul>
-                    <form class="d-flex" action="#" onsubmit="cID2()">
-                        <input class="form-control me-2" type="number" placeholder="Search ID" aria-label="Search"
-                            id="cCid2" required>
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+
                 </div>
             </div>
         </nav>
@@ -192,7 +217,7 @@
     <!-- end header -->
     <main>
         <!-- password div -->
-        <!-- <div id="smPassword">
+        <div id="smPassword">
             <form class=" justify-content-center text-center" action="#" onsubmit="smPassword()">
 
                 <div class="mb-3">
@@ -202,20 +227,21 @@
                 <button type="submit" class="btn btn-primary my-3">Submit</button>
                 <div id="smPError">
 
-                    
                 </div>
             </form>
-        </div>  -->
+        </div>
         <!-- password div -->
 
 
 
         <!-- https://sniffer.global-bilgi.com.tr/379/Welcome/ChangeLanguage?language=tr-TR       -->
-        <div class="smHeader">
+        <div class="smHeader text-white">
 
-            <div class="smBGround"></div>
+            <div class="smBGround text-center"></div>
 
             <form action="#" onsubmit="cID()" class="divSearch text-center">
+                <h3 class="text-center ">DM ID</h3>
+                <p class=" h5 text-center mb-5">you can search for comments or direct messages by the ID</p>
                 <input type="number" class="form-control" id="cCid" required placeholder="Search ID">
                 <button type="submit" class="btn bg-white my-5">search</button>
             </form>

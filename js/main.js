@@ -45,7 +45,18 @@ function smPassword(){
   if(txtPassword == 123456){
     document.getElementById("smPassword").remove();
   }else{
-    document.getElementById('smPError').innerHTML += `<div class="alert alert-danger" role="alert">the Password is wrong!</div>`   ;
+    document.getElementById('smPError').innerHTML += `<div class="alert alert-danger" role="alert">The Password is wrong!</div>`   ;
   }
 }
 
+
+function aOpenLink(){
+  for(let i=1;  i<=4; i++){
+    let aOLink=document.getElementById(`aCheckBox${i}`);
+    if(aOLink.checked){
+
+      window.open(aOLink.value, "_blank");
+    }
+      aOLink='';
+  }
+}

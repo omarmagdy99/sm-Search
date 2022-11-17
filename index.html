@@ -95,7 +95,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item"
                                         href="https://crm365.lcwaikiki.com/main.aspx?appid=c99c9d87-e483-eb11-9f29-00155dd42e06&forceUCI=1&newWindow=true&pagetype=entityrecord&etn=incident"
-                                        target="_blank">New User</a>
+                                        target="_blank">New Case</a>
                                 </li>
                                 <li><a class="dropdown-item"
                                         href="https://crm365.lcwaikiki.com/main.aspx?appid=c99c9d87-e483-eb11-9f29-00155dd42e06&forceUCI=1&newWindow=true&pagetype=entitylist&etn=incident&viewid=00000000-0000-0000-00aa-000010001030&viewType=1039"
@@ -140,7 +140,7 @@
                         </li>
 
                     </ul>
-                <a class="navbar-brand" href="sm.html">SM Search</a>
+                    <a class="navbar-brand" href="sm.html">SM Search</a>
 
 
                 </div>
@@ -153,8 +153,35 @@
 
 
 
-        <div class="agentHeader">
-            <div class="agentBGround"></div>
+        <div class="agentHeader container">
+
+            <form action="#" onsubmit="aOpenLink()">
+                <div class="list-group">
+                    <div class="agentGroup">
+
+                        <label class="list-group-item">
+                            <input id="aCheckBox1" class="form-check-input me-1" type="checkbox"
+                                value="https://mylerz.net/pickup">
+                            Mylerz
+                        </label>
+                        <label class="list-group-item">
+                            <input id="aCheckBox2" class="form-check-input me-1" type="checkbox" value="https://www.aramex.com/eg/ar/track/track-shipments">
+                            Aramex
+                        </label>
+                        <label class="list-group-item">
+                            <input id="aCheckBox3" class="form-check-input me-1" type="checkbox" value="https://erp.r2slogistics.com/portal/PortalDashboard">
+                            R2S
+                        </label>
+                        <label class="list-group-item">
+                            <input id="aCheckBox4" class="form-check-input me-1" type="checkbox" value="https://mylerz.net/track">
+                            Mylerz User
+                        </label>
+
+
+                        <button class="list-group-item btn btn-primary my-3" type="submit">Open </button>
+                    </div>
+                </div>
+            </form>
         </div>
 
     </main>

@@ -69,21 +69,28 @@
                                 Old Tools
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item"
+                                <li>
+                                    <a class="dropdown-item"
                                         href="https://lcwaikiki.omnitron.akinon.net/en/en-us/order/orders/"
                                         target="_blank">Omnitron Black</a>
                                 </li>
-                                <li><a class="dropdown-item" href="https://lcw-bo.akinon.net/main/orders"
-                                        target="_blank">Omnitron White</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="https://lcw-bo.akinon.net/main/orders"
+                                        target="_blank">Omnitron White</a>
+                                </li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item"
+                                <li>
+                                    <a class="dropdown-item"
                                         href="https://lcw-bi.akinon.net/question/77-rayacx-awb-query-by-order-number-egypt?start_date=2021-09-01&end_date=2023-03-01"
-                                        target="_blank">Meta Orders</a></li>
-                                <li><a class="dropdown-item"
+                                        target="_blank">Meta Orders</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item"
                                         href="https://lcw-bi.akinon.net/question/498-rayacx-lcw-money-tracking-eg?start_date=2022-01-01&end_date=2023-05-01"
-                                        target="_blank">Meta LCM</a></li>
+                                        target="_blank">Meta LCM</a>
+                                </li>
                             </ul>
                         </li>
 
@@ -154,36 +161,113 @@
 
 
         <div class="agentHeader container">
-
-            <form action="#" onsubmit="aOpenLink()">
-                <div class="list-group">
-                    <div class="agentGroup">
-
-                        <label class="list-group-item">
-                            <input id="aCheckBox1" class="form-check-input me-1" type="checkbox"
-                                value="https://mylerz.net/pickup">
-                            Mylerz
-                        </label>
-                        <label class="list-group-item">
-                            <input id="aCheckBox2" class="form-check-input me-1" type="checkbox" value="https://www.aramex.com/eg/ar/track/track-shipments">
-                            Aramex
-                        </label>
-                        <label class="list-group-item">
-                            <input id="aCheckBox3" class="form-check-input me-1" type="checkbox" value="https://erp.r2slogistics.com/portal/PortalDashboard">
-                            R2S
-                        </label>
-                        <label class="list-group-item">
-                            <input id="aCheckBox4" class="form-check-input me-1" type="checkbox" value="https://mylerz.net/track">
-                            Mylerz User
-                        </label>
+            <div class="agentGroup">
+                <h3>Open All Links</h3>
+                <p>you can open All links by the below button</p>
+                <div class="list-group ">
 
 
-                        <button class="list-group-item btn btn-primary my-3" type="submit">Open </button>
-                    </div>
+                    <label class="list-group-item">
+                        <input id="aCheckBox1" class="form-check-input me-1" type="checkbox"
+                            value="https://mylerz.net/pickup">
+                        Mylerz
+                    </label>
+                    <label class="list-group-item">
+                        <input id="aCheckBox2" class="form-check-input me-1" type="checkbox"
+                            value="https://www.aramex.com/eg/ar/track/track-shipments">
+                        Aramex
+                    </label>
+                    <label class="list-group-item">
+                        <input id="aCheckBox3" class="form-check-input me-1" type="checkbox"
+                            value="https://erp.r2slogistics.com/portal/PortalDashboard">
+                        R2S
+                    </label>
+                    <label class="list-group-item">
+                        <input id="aCheckBox4" class="form-check-input me-1" type="checkbox"
+                            value="https://mylerz.net/track">
+                        Mylerz User
+                    </label>
+                    <label class="list-group-item">
+                        <input id="aCheckBox5" class="form-check-input me-1" type="checkbox"
+                            value="https://backoffice.lcwaikiki.eg/orders.aspx">
+                        Fix
+                    </label>
+                    <label class="list-group-item">
+                        <input id="aCheckBox6" class="form-check-input me-1" type="checkbox"
+                            value="https://www.lcwaikiki.eg/ar-EG/EG">
+                        LC Website
+                    </label>
+                    <label class="list-group-item">
+                        <input id="aCheckBox7" class="form-check-input me-1" type="checkbox"
+                            value="https://lcwaikiki.omnitron.akinon.net/en/en-us/order/orders/">
+                        Omnitron Black
+                    </label>
+                    <label class="list-group-item">
+                        <input id="aCheckBox8" class="form-check-input me-1" type="checkbox"
+                            value="https://lcw-bo.akinon.net/main/orders">
+                        Omnitron White
+                    </label>
+                    <label class="list-group-item">
+                        <input id="aCheckBox9" class="form-check-input me-1" type="checkbox"
+                            value="https://lcw-bi.akinon.net/question/77-rayacx-awb-query-by-order-number-egypt?start_date=2021-09-01&end_date=2023-03-01">
+                        Meta Orders
+                    </label>
+                    <label class="list-group-item">
+                        <input id="aCheckBox10" class="form-check-input me-1" type="checkbox"
+                            value="https://lcw-bi.akinon.net/question/498-rayacx-lcw-money-tracking-eg?start_date=2022-01-01&end_date=2023-05-01">
+                        Meta LCM
+                    </label>
+                    <label class="list-group-item">
+                        <input id="aCheckBox11" class="form-check-input me-1" type="checkbox"
+                            value="https://crm365.lcwaikiki.com/main.aspx?appid=c99c9d87-e483-eb11-9f29-00155dd42e06&forceUCI=1&newWindow=true&pagetype=entityrecord&etn=incident">
+                        New Case
+                    </label>
+                    <label class="list-group-item">
+                        <input id="aCheckBox12" class="form-check-input me-1" type="checkbox"
+                            value="https://crm365.lcwaikiki.com/main.aspx?appid=c99c9d87-e483-eb11-9f29-00155dd42e06&forceUCI=1&newWindow=true&pagetype=entitylist&etn=incident&viewid=00000000-0000-0000-00aa-000010001030&viewType=1039">
+                        All Cases
+                    </label>
+                    <label class="list-group-item">
+                        <input id="aCheckBox13" class="form-check-input me-1" type="checkbox"
+                            value="https://lcwonline-my.sharepoint.com/:x:/g/personal/hisham_hamza_lcwaikiki_com/EScHxWISASlGtxcE4dEOUEcBST6ohaYQ8WqMdYG4wH2eCQ?rtime=UtkxC5-22kg">
+                        Old Bank Transfer
+                    </label>
+                    <label class="list-group-item">
+                        <input id="aCheckBox14" class="form-check-input me-1" type="checkbox"
+                            value="https://lcwonline-my.sharepoint.com/:x:/g/personal/ahmed_fayez_lcwaikiki_com/EWXl0eiKqdpIml8HTB7rE1QB4gOhnJVrDEm3c3cTARcmJg?e=5k7Ae8">
+                        Call Back
+                    </label>
+                    <label class="list-group-item">
+                        <input id="aCheckBox15" class="form-check-input me-1" type="checkbox"
+                            value="https://lcwonline-my.sharepoint.com/:x:/g/personal/hisham_hamza_lcwaikiki_com/EbQaKVX3qGBAoABUPVS43xYBYPFShjwHWeIFD5YLqoT0Yw?rtime=5i-AL_9N2kg">
+                        Return request
+                    </label>
+                    <label class="list-group-item">
+                        <input id="aCheckBox16" class="form-check-input me-1" type="checkbox"
+                            value="https://rayacontactcenterrcc-my.sharepoint.com/:x:/r/personal/omar_mabdelmenaem_rayacx_com/_layouts/15/Doc.aspx?sourcedoc=%7Bdeadf7cd-cefd-4dca-a40a-460d5beed698%7D&action=editnew&wdPreviousSession=5012d18a-b7c3-4fa8-942c-625be7ca4e48&wdNewAndOpenCt=1663673976645&wdo=4&wdOrigin=wacFileNew&wdTpl=blank&wdLcid=1033&wdPreviousCorrelation=512343c7-54d2-41ef-9619-b6ce47abf4ec&cid=63c4b23b-ff75-43cb-86ea-507cf4fb5bc3">
+                        Fix Issue
+                    </label>
+                    <label class="list-group-item">
+                        <input id="aCheckBox17" class="form-check-input me-1" type="checkbox"
+                            value="https://rayacontactcenterrcc-my.sharepoint.com/:x:/r/personal/omar_mabdelmenaem_rayacx_com/_layouts/15/Doc.aspx?sourcedoc=%7B9A0EC4F1-9BD1-4F91-B116-A2D3359D970A%7D&file=Department-record.xlsx&action=default&mobileredirect=true&cid=8c9faec4-043d-4eac-959f-abd29b689596">
+                        CRM Outage
+                    </label>
+                    <label class="list-group-item">
+                        <input id="aCheckBox18" class="form-check-input me-1" type="checkbox"
+                            value="https://rayacontactcenterrcc-my.sharepoint.com/:x:/g/personal/omar_mabdelmenaem_rayacx_com/Ed1r8LaXzMBIgEXdaLRt-_IBYeiBrB6-gZUq6Wqt5W-NOA?e=szCriW">
+                        Petition Refund List
+                    </label>
+
                 </div>
-            </form>
-        </div>
+                <div class="row">
 
+                    <button class=" btn btn-primary my-3 col-3 mx-1" onclick="aOpenLink()">Open </button>
+                    <button class=" btn  btn-success my-3 col-3 mx-1" onclick="checkAll()">Check All </button>
+                    <button class=" btn  btn-danger my-3 col-3 mx-1" onclick="clearAll()">Clear All </button>
+                </div>
+            </div>
+
+        </div>
     </main>
     <footer></footer>
     <script src="js/bootstrap.min.js"></script>

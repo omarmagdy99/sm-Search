@@ -51,12 +51,34 @@ function smPassword(){
 
 
 function aOpenLink(){
-  for(let i=1;  i<=4; i++){
-    let aOLink=document.getElementById(`aCheckBox${i}`);
-    if(aOLink.checked){
+  let aOLink=document.getElementsByTagName("input");
+  for( let i =0;  i<aOLink.length; i++){
+    
+    if(aOLink[i].checked){
 
-      window.open(aOLink.value, "_blank");
+      
+        window.open(aOLink[i].value, "_blank");
+      
+      
     }
-      aOLink='';
+      
   }
+
+  
+}
+
+
+function checkAll(){
+  let checkElt= document.getElementsByTagName("input");
+  for(let c=0; c<checkElt.length; c++){
+    checkElt[c].checked=true;
+  }
+
+}
+function clearAll(){
+  let checkElt= document.getElementsByTagName("input");
+  for(let c=0; c<checkElt.length; c++){
+    checkElt[c].checked=false;
+  }
+
 }

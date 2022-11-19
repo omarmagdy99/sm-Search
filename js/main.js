@@ -82,3 +82,12 @@ function clearAll(){
   }
 
 }
+
+
+function errorLinks(){
+  for(let i = 0; i<2; i++){
+
+    let errorWindowo=window.open('',  "errorLink", "width=200,height=100");
+    errorWindowo.close();  
+  }
+}

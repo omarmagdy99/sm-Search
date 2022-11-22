@@ -43,7 +43,7 @@ function sID(){
 function smPassword(){
   let txtPassword=document.getElementById("exampleInputPassword1").value;
   if(txtPassword == 123456){
-    document.getElementById("smPassword").remove();
+    document.getElementById("particles-js").remove();
   }else{
     document.getElementById('smPError').innerHTML += `<div class="alert alert-danger" role="alert">The Password is wrong!</div>`   ;
   }

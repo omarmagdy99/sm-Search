@@ -4,8 +4,10 @@ body {
 
 /* header sm  */
 
-#smPassword {
-    background-color: black;
+#particles-js {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../pic/passBack.webp');
+    background-repeat: no-repeat;
+    background-size:cover;
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -14,7 +16,7 @@ body {
     z-index: 9999;
 }
 
-#smPassword form {
+#particles-js form {
     width: 30vw;
     height: 30vh;
     position: absolute;
@@ -66,7 +68,7 @@ main .divSearch {
 }
 
 @media only screen and (max-width: 961px) {
-    main .divSearch, #smPassword form {
+    main .divSearch, #particles-js form {
         width: 60vw;
         height: 60vh;
 

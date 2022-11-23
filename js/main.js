@@ -53,6 +53,10 @@ function smPassword() {
   }
 }
 
+
+
+
+// Copy Links
 function aOpenLink() {
   let aOLink = document.getElementsByTagName("input");
   for (let i = 0; i < aOLink.length; i++) {
@@ -83,6 +87,7 @@ function errorLinks() {
 }
 
 // coppy text
+function ScriptScreen(){
 let LateRefundScript=`Late Refund
 Order Number: ####
 Shipping Number: ####,####
@@ -156,4 +161,5 @@ function MissingItem() {
       setTimeout(function () {
         tooltip.hide();
       }, 1500);
+}
 }

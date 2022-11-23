@@ -92,7 +92,7 @@ main .divSearch {
     border-radius: 10px;
 }
 
-.smUserSearch h3 {
+.divHeader {
 
 
     color: #ebeced;
@@ -103,7 +103,7 @@ main .divSearch {
     margin: 0;
 }
 
-.smUserSearch p {
+.divPar {
     margin: -30px 0 0;
     font-size: 20px;
     text-align: center;
@@ -154,4 +154,14 @@ main .divSearch {
     position: relative;
 }
 
+
+.divCopy{
+    position: relative;
+}
+
+.btnCopy{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 /* agent page  */

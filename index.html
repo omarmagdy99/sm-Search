@@ -18,7 +18,8 @@
 
     <!-- start header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top " style="box-shadow: 0 14px 13px 0 rgb(0 0 0 / 16%);">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top "
+            style="box-shadow: 0 14px 13px 0 rgb(0 0 0 / 16%);">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="pic/R.png" alt="" srcset="" class="barndLogo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -306,86 +307,163 @@
                 </div>
             </div>
         </div>
-    </main>
-        <!-- Remove the container if you want to extend the Footer to full width. -->
-            <!-- Footer -->
-            <footer class="text-center text-lg-start text-white" style="background-color: #929fba">
-                <!-- Grid container -->
-                <div class="container p-4 pb-0">
-                    <!-- Section: Links -->
-                    <section class="">
-                        <!--Grid row-->
-                        <div class="row">
-                            <!-- Grid column -->
-                            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                                <h6 class="text-uppercase mb-4 font-weight-bold">
-                                    LC Waikiki
-                                </h6>
-                                <p>
-                                    To dress people in line with their styles and budgets and make them feel good based on “Everyone Deserves to Dress Well” mission.
+        <div class="agentTemp container my-5">
+            <h3 class="divHeader">SCRIPT</h3>
+            <p class="divPar">also, you can use the below script if you want to escalate to the WH </p>
 
 
-                                </p>
-                            </div>
-                            <!-- Grid column -->
-
-                            <hr class="w-100 clearfix d-md-none" />
-
-                            
-
-                            <hr class="w-100 clearfix d-md-none" />
-
-                            <!-- Grid column -->
-                            <hr class="w-100 clearfix d-md-none" />
-
-                            <!-- Grid column -->
-                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                                <p><i class="fas fa-envelope mr-3"></i> EgyptCRM@lcwaikiki.com</p>
-                                <p><i class="fas fa-phone mr-3"></i> 19739</p>
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                                <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
-
-                                <!-- Facebook -->
-                                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="https://www.facebook.com/LCWaikikiEgypt/"
-                                    role="button"><i class="fab fa-facebook-f"></i></a>
-
-                             
-
-                              
-
-                                <!-- Instagram -->
-                                <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="https://www.instagram.com/lcwaikikiegypt/"
-                                    role="button"><i class="fab fa-instagram"></i></a>
-
-                                <!-- Linkedin -->
-                                <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="https://tr.linkedin.com/company/lc-waikiki"
-                                    role="button"><i class="fab fa-linkedin-in"></i></a>
-                                
-                            </div>
-                        </div>
-                        <!--Grid row-->
-                    </section>
-                    <!-- Section: Links -->
-                <!-- Grid container -->
-
-                <!-- Copyright -->
-                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-                    © 2022 Copyright:
-                    <a class="text-white" href="mailto:omar_mabdelmenaem@rayacx.com">omar_mabdelmenaem</a>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="lateRefund-tab" data-bs-toggle="tab"
+                        data-bs-target="#lateRefundDiv" type="button" role="tab" aria-controls="lateRefund"
+                        aria-selected="true">Late Refund</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="lateOrder-tab" data-bs-toggle="tab" data-bs-target="#lateOrderDiv"
+                        type="button" role="tab" aria-controls="lateOrder" aria-selected="false">Late Order</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="MissingSet-tab" data-bs-toggle="tab" data-bs-target="#MissingSetDiv"
+                        type="button" role="tab" aria-controls="MissingSet" aria-selected="false">Missing Set</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="MissingItem-tab" data-bs-toggle="tab" data-bs-target="#MissingItemDiv"
+                        type="button" role="tab" aria-controls="MissingItem" aria-selected="false">Missing Set</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="lateRefundDiv" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="form-floating divCopy">
+                        <button id="lateRefund" onclick="lateRefund()" type="button" class="btn btn-secondary btnCopy"
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="Copy Done" data-bs-trigger="manual">
+                            <i class="fa-regular fa-copy"></i>
+                        </button>
+                        <textarea class="form-control" placeholder="Leave a comment here" id="lateRefundArea"
+                            style="height: 200px" disabled></textarea>
+                        <label for="floatingTextarea2">Comments</label>
+                    </div>
                 </div>
-                <!-- Copyright -->
-            </footer>
-            <!-- Footer -->
+                <div class="tab-pane fade" id="lateOrderDiv" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="form-floating divCopy">
+                        <button id="lateOrder" onclick="lateOrder()" type="button" class="btn btn-secondary btnCopy"
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="Copy Done" data-bs-trigger="manual">
+                            <i class="fa-regular fa-copy"></i>
+                        </button>
+                        <textarea class="form-control" placeholder="Leave a comment here" id="lateOrderArea"
+                            style="height: 200px" disabled></textarea>
+                        <label for="floatingTextarea2">Comments</label>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="MissingSetDiv" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="form-floating divCopy">
+                        <button id="MissingSet" onclick="MissingSet()" type="button" class="btn btn-secondary btnCopy"
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="Copy Done" data-bs-trigger="manual">
+                            <i class="fa-regular fa-copy"></i>
+                        </button>
+                        <textarea class="form-control" placeholder="Leave a comment here" id="MissingSetArea"
+                            style="height: 200px" disabled></textarea>
+                        <label for="floatingTextarea2">Comments</label>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="MissingItemDiv" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="form-floating divCopy">
+                        <button id="MissingItem" onclick="MissingItem()" type="button" class="btn btn-secondary btnCopy"
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="Copy Done" data-bs-trigger="manual">
+                            <i class="fa-regular fa-copy"></i>
+                        </button>
+                        <textarea class="form-control" placeholder="Leave a comment here" id="MissingItemArea"
+                            style="height: 200px" disabled></textarea>
+                        <label for="floatingTextarea2">Comments</label>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- End of .container -->
+
+    </main>
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white" style="background-color: #929fba">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">
+                            LC Waikiki
+                        </h6>
+                        <p>
+                            To dress people in line with their styles and budgets and make them feel good based on
+                            “Everyone Deserves to Dress Well” mission.
+
+
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                        <p><i class="fas fa-envelope mr-3"></i> EgyptCRM@lcwaikiki.com</p>
+                        <p><i class="fas fa-phone mr-3"></i> 19739</p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+                        <!-- Facebook -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998"
+                            href="https://www.facebook.com/LCWaikikiEgypt/" role="button"><i
+                                class="fab fa-facebook-f"></i></a>
+
+
+
+
+
+                        <!-- Instagram -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac"
+                            href="https://www.instagram.com/lcwaikikiegypt/" role="button"><i
+                                class="fab fa-instagram"></i></a>
+
+                        <!-- Linkedin -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca"
+                            href="https://tr.linkedin.com/company/lc-waikiki" role="button"><i
+                                class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2022 Copyright:
+                <a class="text-white" href="mailto:omar_mabdelmenaem@rayacx.com">omar_mabdelmenaem</a>
+            </div>
+            <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    </div>
+    <!-- End of .container -->
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -53,9 +53,6 @@ function smPassword() {
   }
 }
 
-
-
-
 // Copy Links
 function aOpenLink() {
   let aOLink = document.getElementsByTagName("input");
@@ -87,8 +84,8 @@ function errorLinks() {
 }
 
 // coppy text
-function ScriptScreen(){
-let LateRefundScript=`Late Refund
+
+let LateRefundScript = `Late Refund
 Order Number: ####
 Shipping Number: ####,####
 Barcode: ####
@@ -96,70 +93,75 @@ Amount: ####
 Return Date: ####
 comment: 
 العميل قام بعمل طلب إسترجاع وتم إرجاعه للمخزن ولم يتم رد المبلغ
-`,LateOrderScript=`Late Order
+`,
+  LateOrderScript = `Late Order
 Order Number: ####
 Shipping Number: ####
 Date Create:####
 comment: 
 العميل تواصل للشكوى من تأخير الطلب و يريد الطلب في أسرع وقت 
-`,MissingSetScript=`Missing Set
+`,
+  MissingSetScript = `Missing Set
 Order Number: ####
 Shipping Number: ####
 Barcode: ####
 comment: 
 العميل يشتكي أنه وصل له #### لو لم يصل له #### والعميل يريد القطعه إذا كانت متوفرة
-`,MissingItemScript=`Missing Item
+`,
+  MissingItemScript = `Missing Item
 Order Number: ####
 Shipping Number: ####
 Barcode: ####
 comment: 
 العميل يشتكي أنه لم يصل له قطع من الطلب و العميل يريد القطع أو رد المبلغ في أسرع وقت `;
 
+function ScriptScreen() {
+  document.getElementById("lateRefundArea").value = LateRefundScript;
+  document.getElementById("lateOrderArea").value = LateOrderScript;
+  document.getElementById("MissingSetArea").value = MissingSetScript;
+  document.getElementById("MissingItemArea").value = MissingItemScript;
+}
 // Late Refund
-document.getElementById("lateRefundArea").value=LateRefundScript;
+
 function lateRefund() {
   navigator.clipboard.writeText(LateRefundScript);
   var exampleTriggerEl = document.getElementById("lateRefund");
-      var tooltip = new bootstrap.Tooltip(exampleTriggerEl);
-      tooltip.show();
-  
-      setTimeout(function () {
-        tooltip.hide();
-      }, 1500);
+  var tooltip = new bootstrap.Tooltip(exampleTriggerEl);
+  tooltip.show();
+
+  setTimeout(function () {
+    tooltip.hide();
+  }, 1500);
 }
 // Late Order
-document.getElementById("lateOrderArea").value=LateOrderScript;
 function lateOrder() {
   navigator.clipboard.writeText(LateOrderScript);
   var exampleTriggerEl = document.getElementById("lateOrder");
-      var tooltip = new bootstrap.Tooltip(exampleTriggerEl);
-      tooltip.show();
-  
-      setTimeout(function () {
-        tooltip.hide();
-      }, 1500);
+  var tooltip = new bootstrap.Tooltip(exampleTriggerEl);
+  tooltip.show();
+
+  setTimeout(function () {
+    tooltip.hide();
+  }, 1500);
 }
 // Missing Set
-document.getElementById("MissingSetArea").value=MissingSetScript;
 function MissingSet() {
   navigator.clipboard.writeText(MissingSetScript);
   var exampleTriggerEl = document.getElementById("MissingSet");
-      var tooltip = new bootstrap.Tooltip(exampleTriggerEl);
-      tooltip.show();
-  
-      setTimeout(function () {
-        tooltip.hide();
-      }, 1500);
+  var tooltip = new bootstrap.Tooltip(exampleTriggerEl);
+  tooltip.show();
+
+  setTimeout(function () {
+    tooltip.hide();
+  }, 1500);
 }
-document.getElementById("MissingItemArea").value=MissingItemScript;
 function MissingItem() {
   navigator.clipboard.writeText(MissingItemScript);
   var exampleTriggerEl = document.getElementById("MissingItem");
-      var tooltip = new bootstrap.Tooltip(exampleTriggerEl);
-      tooltip.show();
-  
-      setTimeout(function () {
-        tooltip.hide();
-      }, 1500);
-}
+  var tooltip = new bootstrap.Tooltip(exampleTriggerEl);
+  tooltip.show();
+
+  setTimeout(function () {
+    tooltip.hide();
+  }, 1500);
 }
